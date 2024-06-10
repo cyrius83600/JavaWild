@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Movies {
  public static void main(String [] args)
  {
@@ -10,13 +12,8 @@ public class Movies {
 	 
 	 for(int i = 0; i < films.length; i++)
 	 {
-		 System.out.println(films[i]);
-		 System.out.print("Acteurs : " );
-		 for(int j = 0; j < actors.length; j++)
-		 {
-			 System.out.print(actors[i][j] + " ");
-		 }
-		 System.out.println();
+		 System.out.print("Dans le film " + films[i] + " les acteurs sont : ");
+		 System.out.println(Arrays.toString(actors[i]));
 	 }
  }
 }
